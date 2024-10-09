@@ -66,9 +66,7 @@ const MyVideo: React.FC<MyVideoProps> = ({ }) => {
                                     opacity: 1, 
                                 }}
                             >
-                                {formatSubtitle(subtitle.text).map((line, lineIndex) => (
-                                    <div key={lineIndex}>{line}</div>
-                                ))}
+                               {subtitle.text}
                             </div>
                         </Sequence>
                     );
@@ -118,9 +116,7 @@ const MyVideo: React.FC<MyVideoProps> = ({ }) => {
                                 opacity: opacity, 
                             }}
                         >
-                           {formatSubtitle(subtitle.text).map((line, lineIndex) => (
-                                    <div key={lineIndex}>{line}</div> 
-                                ))}
+                           {subtitle.text}
                         </div>
                     </Sequence>
                 );
